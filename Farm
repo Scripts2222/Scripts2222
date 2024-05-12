@@ -1,0 +1,31 @@
+while wait() do
+local args = {
+    [1] = "Purchase",
+    [2] = "Rank"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Port1"):FireServer(unpack(args))
+local args = {
+    [1] = "SellEnergy"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Port1"):FireServer(unpack(args))
+local args = {
+    [1] = "Click"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Port1"):FireServer(unpack(args))
+local args = {
+    [1] = "PurchaseAll",
+    [2] = "Endurance"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Port1"):FireServer(unpack(args))
+local args = {
+    [1] = "PurchaseAll",
+    [2] = "Strength"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Port1"):FireServer(unpack(args))
+
+end
