@@ -1,0 +1,46 @@
+while wait() do
+local args = {
+    [1] = "Punching",
+    [2] = workspace.PowerTrainingFolder.Model
+}
+
+game:GetService("ReplicatedStorage").Network.Port1:FireServer(unpack(args))
+local args = {
+    [1] = "Vitality"
+}
+
+game:GetService("ReplicatedStorage").Network.Port1:FireServer(unpack(args))
+local args = {
+    [1] = "SellEnergy"
+}
+
+game:GetService("ReplicatedStorage").Network.Port1:FireServer(unpack(args))
+local args = {
+    [1] = "Running"
+}
+
+game:GetService("ReplicatedStorage").Network.Port1:FireServer(unpack(args))
+local args = {
+    [1] = "Click"
+}
+
+game:GetService("ReplicatedStorage").Network.Port1:FireServer(unpack(args))
+local args = {
+    [1] = "PurchaseAll",
+    [2] = "Strength"
+}
+
+game:GetService("ReplicatedStorage").Network.Port1:FireServer(unpack(args))
+local args = {
+    [1] = "PurchaseAll",
+    [2] = "Endurance"
+}
+
+game:GetService("ReplicatedStorage").Network.Port1:FireServer(unpack(args))
+local args = {
+    [1] = "Purchase",
+    [2] = "Rank"
+}
+
+game:GetService("ReplicatedStorage").Network.Port1:FireServer(unpack(args))
+end
