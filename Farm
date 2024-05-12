@@ -27,5 +27,21 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Port1"):FireServer(unpack(args))
+local args = {
+    [1] = "Vitality"
+}
 
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Port1"):FireServer(unpack(args))
+while wait() do
+local args = {
+    [1] = "Running"
+}
+
+game:GetService("ReplicatedStorage").Network.Port1:FireServer(unpack(args))
+endlocal args = {
+    [1] = "Punching",
+    [2] = workspace:WaitForChild("PowerTrainingFolder"):WaitForChild("Model")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Port1"):FireServer(unpack(args))
 end
